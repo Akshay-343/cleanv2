@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+.whoweare *{
+    background: transparent;
+}
+   .whoweare {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.whoweare-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whoweare-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.whoweare-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.whoweare-section {
+  flex-basis: calc(50% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whoweare-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.whoweare-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 991px) {
+    .whoweare-section{
+        flex-basis: calc(100%) ;
+
+    }
+
+}
+
+</style>
+<div class="whoweare">
+  <div class="whoweare-header">
+    <h1>About Us</h1>
+
+      <p>We are a one-stop shop for all kinds of laundry service! We offer a variety of services to our clients at reasonable pricing. We are here to deliver convenience right to your door! No waiting in line or making drawn-out phone calls to customer support. Join us today (FOR FREE!) and stop stressing about stained clothing items!</p>
+
+  </div>
+  <div class="whoweare-content">
+
+    <div class="whoweare-section">
+      <h2>When was the company founded? </h2>
+      <p>The company was founded in August of 2015.</p>
+    </div>
+    <div class="whoweare-section">
+      <h2>What is our mission? </h2>
+      <p>The highest quality service possible for the lowest price is our company's mission statement. It's time for you to relax and stop worrying about getting the stains out of your clothes – leave that to us! WE GOT YOUR BACK AND YOUR CLOTHES!</p>
+    </div>
+    <div class="whoweare-section">
+      <h2>What we do to thrive? </h2>
+      <p>As a business, we collaborate with skilled workers and exclusively use top-notch products! Our products and services are environmentally sustainable! We are not only worried about your clothes but also our planet Earth!</p>
+    </div>
+    <div class="whoweare-section">
+      <h2>Why choose us?</h2>
+      <p>You should choose us because we care. We care about that lucky white shirt that you wear to important meetings. We care about your wedding dress. We care about your child’s sweater. Our services, employees, and store are here to make sure you shine bright on your important day! Join us today (FOR FREE!).</p>
+    </div>
+    <div class="whoweare-section">
+      <h2>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WE GOT YOUR BACK AND YOUR CLOTHES!</h2>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
